@@ -11,3 +11,4 @@ WORKDIR /app
 RUN npm install
 
 ENTRYPOINT [ "node" ]
+CMD ["server.js"]
