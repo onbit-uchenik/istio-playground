@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: cityexplorer
+    service: cityexplorer
+  name: cityexplorer
+spec:
+  internalTrafficPolicy: Cluster
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - name: http
+    port: 8901
+  selector:
+    app: cityexplorer
+  sessionAffinity: None
+  type: ClusterIP
+
