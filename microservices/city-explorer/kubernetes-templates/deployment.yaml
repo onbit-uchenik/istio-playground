@@ -26,7 +26,7 @@ spec:
         version: v1
     spec:
       containers:
-      - image: eronbituchenik/cityexplorer:1.0.0
+      - image: eronbituchenik/cityexplorer:1.0.0-amd64
         imagePullPolicy: IfNotPresent
         name: cityexplorer
         ports:
