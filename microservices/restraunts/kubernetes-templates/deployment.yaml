@@ -31,7 +31,7 @@ spec:
         name: restraunts
         ports:
         - containerPort: 8901
-          protocol: HTTP
+          protocol: TCP
         resources: {}
         terminationMessagePath: /dev/termination-log
         terminationMessagePolicy: File
