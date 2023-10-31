@@ -26,7 +26,7 @@ spec:
         version: v1
     spec:
       containers:
-      - image: 
+      - image: eronbituchenik/restraunts:1.0.0-amd64
         imagePullPolicy: IfNotPresent
         name: restraunts
         ports:
