@@ -1,4 +1,4 @@
-FROM node:lts-alpine
+FROM --platform=amd64 node:lts-alpine
 
 RUN mkdir /app
 

@@ -1,4 +1,4 @@
-FROM node:lts-alpine
+FROM --platform=arm64 node:lts-alpine
 
 RUN mkdir /app
 
@@ -11,4 +11,3 @@ WORKDIR /app
 RUN npm install
 
 ENTRYPOINT [ "node" ]
-CMD [ "server.js" ]
