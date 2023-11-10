@@ -6,8 +6,8 @@ const request = require('postman-request');
 
 const SERVER_HOST = process.env.SERVER_HOST || '0.0.0.0';
 const SERVER_PORT = process.env.PORT || 8901;
-const RESTRAUNT_SERVER_HOST = process.env.RESTRAUNT_HOSTNAME;
-const RESTRAUNT_SERVER_PORT = process.env.RESTRAUNT_PORT;
+const RESTRAUNT_SERVER_HOST = process.env.RESTRAUNTS_SERVICE_HOST
+const RESTRAUNT_SERVER_PORT = process.env.RESTRAUNTS_SERVICE_PORT
 
 
 server.listen(SERVER_PORT,SERVER_HOST, function () {
